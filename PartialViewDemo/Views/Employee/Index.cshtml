@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PartialViewDemo.Models.Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Employee List</h1>
+@Html.Partial("_EmployeeList",Model)
+
+<p>
+    RenderPartial
+</p>
+
+@{
+    Html.RenderPartial("_EmployeeList", Model);
+}
